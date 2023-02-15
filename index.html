@@ -1,0 +1,422 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    
+<!--navbar-->
+<nav class="navbar navbar-expand-md sticky-top navbar-light bg-info">
+  <div class="container">
+    <a href="#into" class="navbar-brand">
+      <span class="fw-bold text-dark">
+        <i class="bi bi-bag-check-fill"></i>
+        B's Fashion Empire
+      </span>
+    </a>
+    <!--toggle button for mobile nav-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" 
+    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+ <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+    <ul class="navbar-nav">
+     <li class="nav-item">
+      <a class="nav-link" href="#About us"> About us</a>
+     </li>
+
+     <li class="nav-item">
+      <a class="nav-link" href="#Reviews" >Reviews</a>
+     </li>
+
+     <li class="nav-item">
+      <a class="nav-link" href="#Contact">Get in Touch</a>
+     </li>
+
+     <li class="nav-item d-md-none">
+      <a class="nav-link" href="#Pricing">Pricing</a>
+     </li>
+
+     <li class="nav-item ms-2 d-none d-md-inline">
+      <a class="btn btn-secondary">Shop Now</a>
+     </li>
+    </ul>
+  </div>
+</nav>
+
+
+<!--main image & into text-->
+<section id="intro">
+  <div class="container-lg">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-5 text-center text-md-start">
+        <h1>
+          <div class="display-2">B's Empire</div>
+          <div class="display-5 text-muted">Hijabs&Stitch</div>
+        </h1>
+        <p class="lead my-3 text-muted">A stitch in time</p>
+        <a href="#pricing" class="btn btn-secondary btn-lg mb-5">Shop Now</a>
+           <!--open sidebar/offcanvas-->
+           <a href="#sidebar" class="d-block" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+            Explore My Other Fashion Collections
+           </a>
+      </div>
+      <div class="col-md-5 text-center">
+        <img class="img-fluid" src="images/hijabstore.png" alt="scarf">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--pricing plan-->
+<section id="Pricing" class="bg-light mt-5">
+  <div class="container-lg">
+    <div class="text-center">
+      <h2 id="PP">Pricing Plan</h2>
+      <p class="lead text-muted">choose a pricing plan to suit you.</p>
+    </div>
+    <div id="Vs" class="row my-5 align-items-center justify-content-center">
+      <div class="col-8 col-lg-4 col-xl-3" >
+         <div class="card border-0 mb-2">
+          <div class="card-body text-center my-4">
+            <img class="img" src="images/vintage.png"alt="...">
+            <h4 class="card-title">New Collection</h4>
+            <p class="lead card-subtitle">Vintage Scarf</p>
+            <p class="text-primary fw-bold">#1500</p>
+            <a href="#" class="btn btn-outline-primary btn-lg">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="Cs" class="col-8 col-lg-4 col-xl-3">
+        <div class="card border-0 mb-2">
+          <div class="card-body justify-content-center text-center my-4">
+            <img class="img" src="images/scarf.png"alt="...">
+              <h4>New Collection</h4>
+              <p class="lead card-subtitle">Crinckles Scarf</p>
+              <p class="text-primary fw-bold">#3500</p>
+              <a href="#" class="btn btn-outline-primary btn-lg">Buy Now</a>
+            </div>
+        </div>
+      </div>
+
+      <div id="Hs" class="col-8 col-lg-4 col-xl-3" >
+        <div class="card border-0 mb-2">
+         <div class="card-body text-center my-4">
+           <img class="img" src="images/headscarfs.png"alt="...">
+           <h4 class="card-title">New Collection</h4>
+           <p class="lead card-subtitle">Head Scarf</p>
+           <p class="text-primary fw-bold">#2500</p>
+           <a href="#" class="btn btn-outline-primary btn-lg">Buy Now</a>
+         </div>
+       </div>
+     </div>
+
+
+     <div id="Ps" class="col-8 col-lg-4 col-xl-3">
+       <div class="card border-0 mb-2">
+         <div class="card-body justify-content-center text-center my-4">
+           <img class="img" src="images/printedscarf.png"alt="...">
+             <h4>New Collection</h4>
+             <p class="lead card-subtitle">Printed Scarf</p>
+             <p class="text-primary fw-bold">#3500</p>
+             <a href="#" class="btn btn-outline-primary btn-lg">Buy Now</a>
+           </div>
+       </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--about us at a glance-->
+<section id="About us">
+  <div class="container-md" >
+    <div class="text-center">
+      <h2>what are we?</h2>
+      <p class="lead text-muted">A quick glace of what we are.</p>
+    </div>
+
+    <div class="row my-5 g-5 justify-content-around align-items-center">
+      <div class="col-6 col-lg-4">
+        <img src="images/goldhijab.png" class="image-fluid" alt="hijab">
+      </div>
+<!--accordion-->
+      <div class="col-lg-6">
+      <div class="accordion" id="About">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#AboutUs" aria-expanded="true" aria-controls="AboutUs">
+              About Us
+            </button>
+          </h2>
+          <div id="AboutUs" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#About">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Nihil asperiores ipsum quae cum temporibus optio eius soluta officia incidunt! 
+               Obcaecati harum tempore non quia nihil odit soluta reiciendis facere fuga?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#whatWeSell" aria-expanded="false" aria-controls="whatWeSell">
+              What we sell
+            </button>
+          </h2>
+          <div id="whatWeSell" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#About">
+            <div class="accordion-body">
+              <p>fashion hijabs,headscarfs,hijab accessories and we also style and stitch dresses.</p>
+            </div>
+          </div>
+         </div>
+      
+         <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#OurPurpose" aria-expanded="false" aria-controls="OurPurpose">
+              Our Purpose
+            </button>
+          </h2>
+          <div id="OurPurpose" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#About">
+            <div class="accordion-body">
+              <p>To meet customers demands and stitch dress in time.</p>
+            </div>
+          </div>
+         </div>
+    
+      </div>
+ 
+  </div>
+  </div>
+</section>
+
+<section>
+<div class="container-md">
+  <div class="text-center">
+    <h2>NEW COLLECTIONS</h2>
+    <p class="lead text-muted">Available Items in Store</p>
+  </div>
+  <div class="list-group">
+    <a href="#PP" class="list-group-item list-group-item-action active" aria-current="true">
+      Pricing Plan
+    </a>
+    <a href="#Vs" class="list-group-item list-group-item-action">Vintage Scarf</a>
+    <a href="#Cs" class="list-group-item list-group-item-action">Crinckles Scarf</a>
+    <a href="#Hs" class="list-group-item list-group-item-action">Head Scarf</a>
+    <a href="#Ps" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Printed Scarf</a>
+  </div>
+  </div>
+</section>
+
+<!--review list-->
+<section id="Reviews" class="bg-light">
+  <div class="container-lg">
+    <div class="text-center">
+      <h2>Reviews</h2>
+      <p>what my clients have said about our store...</p>
+    </div>
+    <div class="row justify-content-center my-3">
+      <div class="col-lg-8">
+        <div class="list-group">
+          <div class="list-group-item py-3">
+            <div class="pb-2">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <h5 class="mb-1">A must buy for modesty fashion</h5>
+            <p class="mb-1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Illum saepe assumenda odit veritatis suscipit consequatur corporis qui voluptatibus repudiandae
+               enim eaque ipsam animi hic dicta, expedita, reiciendis molestias reprehenderit architecto!
+            </p>
+            <small>Review by Aisha</small>
+          </div>
+
+          <div class="list-group-item py-3">
+            <div class="pb-2">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <h5 class="mb-1">A must buy for modesty fashion</h5>
+            <p class="mb-1">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+              Illum saepe assumenda odit veritatis suscipit consequatur corporis qui voluptatibus repudiandae
+               enim eaque ipsam animi hic dicta, expedita, reiciendis molestias reprehenderit architecto!
+            </p>
+            <small>Review by Aisha</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--form-control, form-label, form-select, input-group, input-group-text-->
+<section id="Contact">
+<div class="container-lg">
+  <div class="text-center">
+    <h5>Get in Touch</h5>
+    <p>Question to ask?Fill form to contact me directly...</p>
+  </div>
+  <div class="row justify-content-center my-4">
+   
+    <div class="col-lg-6">
+      <form>
+        <label for="email" class="form-label">Email address:</label>
+        <div class="mb-2 input-group">
+          <span class="input-group-text">
+            <i class="bi bi-envelope-fill"></i></span>
+          </span>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        <!--tooltip-->
+        <span class="input-group-text">
+          <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+          <i class="bi bi-question-circle text-muted"></i>
+        </span>
+        </span>
+         </div>
+
+        <label for="name" class="form-label">Name</label>
+        <div class="input-group mb-2">
+          <span class="input-group-text">
+            <i class="bi bi-person-fill"></i>
+          </span>  
+        <input type="text" class="form-control" id="name" placeholder="e.g Aisha">
+
+        <!--tooltip-->
+        <span class="input-group-text">
+          <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
+          <i class="bi bi-question-circle text-muted"></i>
+        </span>
+        </span>
+         </div>
+
+        <label for="subject" class="for label">what is your question about?</label>
+        <div class="input-group mb-2">
+          <span class="input-group-text">
+            <i class="bi bi-chat-right-fill"></i>
+          </span>
+        <select class="form-select" id="subject">
+          <option value="pricing">pricing query</option>
+          <option value="content">content query</option>
+          <option value="other">other query</option>
+        </select>
+        </div>
+
+        <div class="form-floating mb-3 mt-3">
+          <textarea id="query" class="form-control" placeholder="Leave a comment here" style="height: 140px;"></textarea>
+          <label for="query" class="form-label">Your query...</label>
+        </div>
+
+        <div class="mb-4 text-center">
+          <button type="submit" class="btn btn-secondary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--modal trigger-->
+</section class="bg-light">
+<div class="container">
+<div class="text-center">
+<h2>Stay in The Loop</h2>
+<p class="lead">Get the latest update on styles as they happen...</p>
+</div>
+<div class="row justify-content-center">
+  <div class="col-md-8 text-center">
+    <p class="text-muted my-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Animi, omnis ipsum aspernatur voluptate blanditiis facilis, 
+       quaerat error eius illum nam possimus modi ratione nostrum cupiditate tempora.
+       Animi distinctio obcaecati placeat?
+    </p>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+     Register for Updates
+    </button>
+  </div>
+  </div>
+</div>
+</section>
+
+<!-- Modal-->
+<div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-title">Get Latest Updates</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted my-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Animi, omnis ipsum aspernatur voluptate blanditiis facilis, 
+           quaerat error eius illum nam possimus modi ratione nostrum cupiditate tempora.
+           Animi distinctio obcaecati placeat?
+        </p>
+        <label for="modal-email" class="form-label">Your email address:</label>
+        <input type="email" class="form-control" id="modal-email" placeholder="example@x.com">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--offcanvas-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="sidebar-label">My Other Fashion Collection </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Animi, omnis ipsum aspernatur voluptate blanditiis facilis, 
+       quaerat error eius illum nam possimus modi ratione nostrum cupiditate tempora.
+       Animi distinctio obcaecati placeat?
+    </p>
+<!--dropdowns-->
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+  </div>
+</div>
+
+
+  
+   <script src="./js/bootstrap.min.js"></script> 
+
+   <script>
+    const tooltips = document.querySelectorAll('.tt')
+    tooltips.forEach(t => {
+      new bootstrap.tooltip(t)
+    })
+   </script>
+  </body>
+</html> 
+
+
+

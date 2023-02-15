@@ -1,0 +1,19 @@
+body{
+  overflow-x:hidden
+}
+section{
+    padding: 60px 0;
+  }
+  .img{
+    transition: 0.5s;
+  }
+  .img:hover{
+    transform: translateY(-40px);
+  }
+  
+  .img-fluid{
+    transition: 0.5s;
+  }
+  .img-fluid:hover{
+    transform: translateX(-10px);
+  }
